@@ -1,1 +1,178 @@
 /* your code here */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #10e27a;
+	font-family: Arial, sans-serif;
+}
+
+.product {
+	width: 700px;
+	min-height: 500px;
+	display: flex;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product__photo {
+	width: 50%;
+	position: relative;
+}
+
+.photo-container {
+	width: 360px;
+	position: absolute;
+	top: 40px;
+	left: -60px;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+}
+
+.photo-main {
+	height: 360px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #b7f52c, #7ed321);
+}
+
+.photo-main > img {
+	width: 330px;
+	max-height: 330px;
+	object-fit: contain;
+}
+
+.controls {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-size: 22px;
+	z-index: 1;
+}
+
+.photo-album {
+	padding: 12px;
+	background-color: #fff;
+}
+
+.photo-album > ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	list-style: none;
+}
+
+.photo-album > ul > li {
+	width: 55px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.photo-album > ul > li > img {
+	width: 48px;
+	height: 48px;
+	object-fit: contain;
+}
+
+.product__info {
+	width: 50%;
+	padding: 55px 35px 40px 30px;
+}
+
+.title h1 {
+	margin: 0 0 5px;
+	font-size: 28px;
+	color: #333;
+}
+
+.title span {
+	font-size: 12px;
+	color: #aaa;
+}
+
+.price {
+	margin: 25px 0;
+	color: #ff3f40;
+	font-size: 18px;
+}
+
+.price span {
+	font-size: 60px;
+	font-weight: 300;
+}
+
+.variant h3,
+.description h3 {
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #999;
+}
+
+.variant > ul {
+	display: flex;
+	gap: 10px;
+	margin: 10px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.variant > ul > li {
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.variant > ul > li > img {
+	width: 42px;
+	height: 42px;
+	object-fit: contain;
+}
+
+.description {
+	margin-top: 25px;
+}
+
+.description ul {
+	padding-left: 20px;
+	color: #555;
+	font-size: 13px;
+	line-height: 1.8;
+}
+
+.buy--btn {
+	margin-top: 15px;
+	padding: 16px 32px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ff3f40;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+	box-shadow: 0 5px 12px rgba(255, 63, 64, 0.3);
+}
